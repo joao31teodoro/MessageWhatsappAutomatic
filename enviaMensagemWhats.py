@@ -4,7 +4,7 @@ import time
 
 def enviar_mensagem_whatsapp(numeros, mensagem):
     for numero in numeros:
-        pywhatkit.sendwhatmsg_instantly(f"+{numero}", mensagem, wait_time=20)  # Envia a mensagem imediatamente com um tempo de espera de 5 segundos entre cada mensagem
+        pywhatkit.sendwhatmsg_instantly(f"+{numero}", mensagem, wait_time=20)  # Envia a mensagem imediatamente com um tempo de espera de 20 segundos entre cada mensagem
         time.sleep(10)  # Aguarda 10 segundos após abrir o WhatsApp Web
         pyautogui.press('enter')  # Simula a tecla Enter para enviar a mensagem
 
